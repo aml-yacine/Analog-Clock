@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main_color:rgb(248, 229, 138);
+    --black_color:#000;
+    --white_color :#fff;
+}
+body {
+    background-color: var(--main_color);
+    font-family: "Special Elite", cursive;
+}
+
+/* header */
+.header h1{
+text-align: center;
+font-size: 3rem;
+margin: 27px 0 ;
+}
+.container {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.clock_base {
+    background-color: var(--white_color);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 15px solid var(--black_color);
+    box-shadow: 0 0 20px 0px var(--black_color), inset 0 0 17px 0px var(--black_color);
+    position: relative;
+}
+
+/*clock hand */
+.hand_base {
+    width: 15px;
+    height: 15px;
+    background-color: var(--black_color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    box-shadow: 0 0 5px 0px #777;
+    z-index: 44;
+}
+
+.hand {
+    background-color: var(--black_color);
+    border-radius: 50% 50% 0 0;
+    transform-origin: bottom;
+
+}
+
+.hour_hand {
+    width: 9px;
+    height: 22%;
+    position: absolute;
+    top: 31%;
+    left: 48%;
+    z-index: 1;
+    /* animation: rotate 2120s linear 0s infinite; */
+    /* duration --> 43200s */
+}
+
+.min_hand {
+    width: 6px;
+    height: 30%;
+    position: absolute;
+    top: 23%;
+    left: 49%;
+    z-index: 2;
+    /* animation: rotate  linear 0s infinite; */
+    /* duration --> 3600s */
+
+}
+
+.sec_hand {
+    width: 3px;
+    height: 38%;
+    position: absolute;
+    top: 15%;
+    left: 49%;
+    z-index: 3;
+    /* animation: rotate 30s linear 0s infinite; */
+    /* duration --> 60s */
+
+}
+
+/* @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: bottom center;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transform-origin: bottom center;
+    }
+} */
+
+/* label */
+.label {
+    color: var(--black_color);
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 4px;
+}
+
+.label_1 {
+    right: 24%;
+    top: 3%;
+}
+
+.label_2 {
+    right: 8%;
+    top: 19%;
+}
+
+.label_3 {
+    right: 3%;
+    top: 41%;
+}
+
+.label_4 {
+    right: 9%;
+    bottom: 20%;
+}
+
+.label_5 {
+    right: 24%;
+    bottom: 4%;
+}
+
+.label_6 {
+    right: 45%;
+    bottom: 0%;
+}
+
+.label_7 {
+    left: 25%;
+    bottom: 3%;
+}
+
+.label_8 {
+    left: 9%;
+    bottom: 18%;
+}
+
+.label_9 {
+    left: 3%;
+    bottom: 40%;
+}
+
+.label_10 {
+    left: 4%;
+    top: 22%;
+}
+
+.label_11 {
+    left: 20%;
+    top: 5%;
+}
+
+.label_12 {
+    left: 44%;
+    top: -3%;
+}
